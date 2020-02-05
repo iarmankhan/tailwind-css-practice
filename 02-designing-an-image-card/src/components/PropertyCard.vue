@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white border shadow-md rounded-lg overflow-hidden">
-    <img :src="property.imageUrl" :alt="property.imageAlt" />
+    <img class="h-48 w-full object-cover" :src="property.imageUrl" :alt="property.imageAlt" />
     <div class="p-6">
       <div class="flex items-baseline">
         <span class="inline-block bg-teal-200 text-teal-700 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">New</span>
