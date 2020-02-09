@@ -13,12 +13,27 @@
           </button>
         </div>
     </div>
-    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-      <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">List your property</a>
-      <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Trips</a>
-      <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</a>
-      <AccountDropDown class="ml-6" />
-    </div>
+    <nav :class="isOpen ? 'block' : 'hidden'" class="sm:block">
+      <div class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+          <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">List your property</a>
+          <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Trips</a>
+          <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</a>
+          <AccountDropDown class="sm:block hidden sm:ml-6" />
+      </div>
+
+      
+      <div class="px-4 py-5 border-t border-gray-800 sm:hidden">
+        <div class="flex items-center">
+            <img class="h-8 w-8 border-2 border-gray-600 rounded-full object-cover" src="http://demo.powowbox.com/powowbox/avatar_demo/Jane_0001.png" alt="Your Avatar">
+            <span class="ml-3 text-white font-semibold">Jhon Doe</span>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="block text-gray-400 hover:text-white">Account Settings</a>
+            <a href="#" class="mt-2 block text-gray-400 hover:text-white">Support</a>
+            <a href="#" class="mt-2 block text-gray-400 hover:text-white">Sign Out</a>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 
