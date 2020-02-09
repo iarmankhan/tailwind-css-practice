@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
-    <AccountDropDown />
-    <!-- <PropertyCard :property="property" /> -->
+  <div id="app" class="antialiased text-gray-900">
+    <div class="bg-gray-800 min-h-screen py-32 px-6">
+      <AccountDropDown />
+    </div>
   </div>
 </template>
 
