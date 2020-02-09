@@ -1,22 +1,19 @@
 <template>
   <div id="app" class="antialiased text-gray-900">
-    <div class="bg-gray-800 min-h-screen py-32 px-6">
-      <AccountDropDown />
+    <div class="bg-gray-800 min-h-screen">
+      <NavBar />
     </div>
   </div>
 </template>
 
 <script>
-import AccountDropDown from './components/AccountDropDown.vue'
-// import NavBar from './components/NavBar.vue'
+import NavBar from './components/NavBar.vue'
 // import PropertyCard from './components/PropertyCard.vue'
 
 export default {
   name: 'app',
   components: {
-    AccountDropDown,
-    // NavBar,
-    // PropertyCard
+    NavBar,
   },
   data: () => ({
     property: {
